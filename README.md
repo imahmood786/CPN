@@ -18,6 +18,7 @@ Constraint **S1** **= {**The door should never be opened when the elevator is mo
 The four basic components developed for the construction of an elevator model are briefly described next.
 
 **4.2.1** **Panel:** It is the button panel that is installed on each floor outside the elevator door. When the passengers arrive, they press the panel buttons to call the elevator at their current floor. It takes the passenger tokens as input in their respective floors, processes them in a FIFO queue, constructs a list of trips and passes on the passenger tokens to the output (see Figure 2). 
+
 ![PanelComponent](https://user-images.githubusercontent.com/86586703/123599378-f797e200-d80e-11eb-8b4d-d61a5876e0ba.JPG)
 
 **4.2.2  Door**
@@ -34,7 +35,7 @@ It is the carriage for a maximum of 10 passengers. When the passengers enter the
 
 **4.2.4  Motor**
 
-It takes a list of trips as input from the cabin (the internal button panel selection for the desired floor) or from the floors (outer panel) and moves the motor right to go upwards or left to go downwards. Motor has brakes, which are applied when the desired floor is reached. This component is responsible to change the ‘*current floor***’.** Figure 5 illustrates Motor component. 
+It takes a list of trips as input from the cabin (the internal button panel selection for the desired floor) or from the floors (outer panel) and moves the motor right to go upwards or left to go downwards. Motor has brakes, which are applied when the desired floor is reached. This component is responsible to change the ‘*current floor*’. Figure 5 illustrates Motor component. 
 
 ![MotorComponent](https://user-images.githubusercontent.com/86586703/123599945-99b7ca00-d80f-11eb-8693-02078083346c.JPG)
 
