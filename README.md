@@ -76,7 +76,7 @@ The reuse of the elevator component renders the same results however improves th
 
 **CPN Tools Installation Process**
 1. To install CPN Tools for Windows, download and run the file cpntools_setup.exe
-2. After successfully installation, ypu need to open the CPN file. Double click on the file, it will open in CPN tools.
+2. After successfully installation, you need to open the CPN file. Double click on the file, it will open in CPN tools.
 3. Once the file will be open, you need to drag the simulation tools from the index to the workspace.
 
 ![SimulationsTool](https://user-images.githubusercontent.com/86586703/123760713-8de50a00-d8da-11eb-82d9-8b2b08480123.JPG)
