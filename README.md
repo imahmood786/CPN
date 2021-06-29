@@ -43,13 +43,13 @@ It takes a list of trips as input from the cabin (the internal button panel sele
 
 **4.3 Model composition**
 
-All the components are composed together to form an elevator model as shown in Figure 6:
+All the components are composed together to form an elevator model as shown in Figure 5:
 
-![Composed Model](https://user-images.githubusercontent.com/86586703/123600184-db487500-d80f-11eb-9aba-0f4d946ed0e4.JPG)
+![Composed Model](https://user-images.githubusercontent.com/86586703/123754891-c84ba880-d8d4-11eb-9c22-dee2b6ab0db2.JPG)
 
 **4.4  Model Execution**
 
-Figure 7 illustrates the initial state and the final state of the model execution. The tokens in the initial state represent passengers as a tuple: **{Passenger ID, Current Floor, Desired Floor}**. Note that in the final state, all the passengers reach their desired floor. 
+Figure 6 illustrates the initial state and the final state of the model execution. The tokens in the initial state represent passengers as a tuple: **{Passenger ID, Current Floor, Desired Floor}**. Note that in the final state, all the passengers reach their desired floor. 
 
 ![Initial State](https://user-images.githubusercontent.com/86586703/123600305-fadf9d80-d80f-11eb-89cd-106e4017ffc9.JPG)
 
