@@ -51,24 +51,24 @@ All the components are composed together to form an elevator model as shown in F
 
 Figure 6 illustrates the initial state and the final state of the model execution. The tokens in the initial state represent passengers as a tuple: **{Passenger ID, Current Floor, Desired Floor}**. Note that in the final state, all the passengers reach their desired floor. 
 
-![Initial State](https://user-images.githubusercontent.com/86586703/123600305-fadf9d80-d80f-11eb-89cd-106e4017ffc9.JPG)
+![Initial State](https://user-images.githubusercontent.com/86586703/123755660-938c2100-d8d5-11eb-9062-00f7fe5ccb52.JPG)
 
-![Final State](https://user-images.githubusercontent.com/86586703/123600324-ff0bbb00-d80f-11eb-88d8-6d22d840ec90.JPG)
+![Final State](https://user-images.githubusercontent.com/86586703/123755684-98e96b80-d8d5-11eb-8b2c-1d64b13e4a53.JPG)
 
 **4.5 Composability Verification**
 
-In this step we perform the state-space analysis. After generating the state-space of the composed model, we visualize it in Gephi tool as shown in Figure 8. In the state-space, Node 1 is the initial node and Node 223 is the goal state. The shortest path to reach the goal state is shown in red color. We develop and perform the query functions, shown in Figure 9 to prove that the goal state is reachable and the constraint will never be reached. The goal is to ensure that all the passengers arrive at their desired floors, so we check that there exists a marking that satisfies this criteria. The constraint is to ensure that the door will never be opened when the elevator is moving. We prove that if there are tokens in ‘*Entered*’ place of any floor, meaning the door is opened, then the ‘*RotatingLeft*’ or ‘*RotatingRight*’ place is empty and vice versa. The satisfaction of goals and constraints assert that all the components are consistent and their behavioral composability is verified as per the given requirement specification. 
+In this step we perform the state-space analysis. After generating the state-space of the composed model, we visualize it in Gephi tool as shown in Figure 7. In the state-space, Node 1 is the initial node and Node 223 is the goal state. The shortest path to reach the goal state is shown in red color. We develop and perform the query functions, shown in Figure 8 to prove that the goal state is reachable and the constraint will never be reached. The goal is to ensure that all the passengers arrive at their desired floors, so we check that there exists a marking that satisfies this criteria. The constraint is to ensure that the door will never be opened when the elevator is moving. We prove that if there are tokens in ‘*Entered*’ place of any floor, meaning the door is opened, then the ‘*RotatingLeft*’ or ‘*RotatingRight*’ place is empty and vice versa. The satisfaction of goals and constraints assert that all the components are consistent and their behavioral composability is verified as per the given requirement specification. 
 
-![State-Space](https://user-images.githubusercontent.com/86586703/123600446-1c408980-d810-11eb-936b-8b7a0f3c6429.JPG)
+![State-Space](https://user-images.githubusercontent.com/86586703/123756999-f3cf9280-d8d6-11eb-8ce1-97a257d22b8a.JPG)
 
-![GoalState](https://user-images.githubusercontent.com/86586703/123600501-2c586900-d810-11eb-9f3a-bb8ef9e26696.JPG)
+![GoalState](https://user-images.githubusercontent.com/86586703/123757188-25e0f480-d8d7-11eb-92a5-c19c42b3ecae.JPG)
 
 **4.6  Reusability of Model Components**
 
-We create another scenario of the Elevator Model where two elevators are used to show the reuse of model components. Figure 10 shows the initial step of the simulation after reuse and Figure 11 show the final step. 
+We create another scenario of the Elevator Model where two elevators are used to show the reuse of model components. Figure 9 shows the initial step of the simulation after reuse and Figure 10 show the final step. 
 
-![Model_Reuse](https://user-images.githubusercontent.com/86586703/123600655-501baf00-d810-11eb-8c67-d1a4e4de6c1d.JPG)
+![Model_Reuse](https://user-images.githubusercontent.com/86586703/123757646-a0aa0f80-d8d7-11eb-8dd9-99b1880831f1.JPG)
 
-![Model_Reuse2](https://user-images.githubusercontent.com/86586703/123600669-5578f980-d810-11eb-993b-bfc5fbc6214f.JPG)
+![Model_Reuse2](https://user-images.githubusercontent.com/86586703/123757663-a56ec380-d8d7-11eb-9378-b941fd5f72fe.JPG)
 
 The reuse of the elevator component renders the same results however improves the overall efficiency of the system as the passengers randomly select either elevator and reach their final destination in lesser time. When we apply our composability verification process the goal state is reached and the safety property is satisfied. Thus, we can say that a verified composed model satisfies its requirement specification and that successful composability verification is an important characteristic of model reuse. 
