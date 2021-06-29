@@ -19,27 +19,27 @@ The four basic components developed for the construction of an elevator model ar
 
 **4.2.1 Panel**
 
-It is the button panel that is installed on each floor outside the elevator door. When the passengers arrive, they press the panel buttons to call the elevator at their current floor. It takes the passenger tokens as input in their respective floors, processes them in a FIFO queue, constructs a list of trips and passes on the passenger tokens to the output (see Figure 2). 
+It is the button panel that is installed on each floor outside the elevator door. When the passengers arrive, they press the panel buttons to call the elevator at their current floor. It takes the passenger tokens as input in their respective floors, processes them in a FIFO queue, constructs a list of trips and passes on the passenger tokens to the output (see Figure 1). 
 
-![PanelComponent](https://user-images.githubusercontent.com/86586703/123599378-f797e200-d80e-11eb-8b4d-d61a5876e0ba.JPG)
+![PanelComponent](https://user-images.githubusercontent.com/86586703/123754287-288e1a80-d8d4-11eb-9d67-8c1b734a8f13.JPG)
 
 **4.2.2  Door**
 
-The door opens and closes on arriving at each floor and allows the passengers to enter the cabin according to the capacity. The place *‘current floor’* represents the current floor. The place ‘*Load*’ represents the current load in the cabin. Only those passengers can enter which are at the current floor. The door closes when there are no more passengers or the maximum capacity has been reached. Figure 3 illustrates the door component. 
+The door opens and closes on arriving at each floor and allows the passengers to enter the cabin according to the capacity. The place *‘current floor’* represents the current floor. The place ‘*Load*’ represents the current load in the cabin. Only those passengers can enter which are at the current floor. The door closes when there are no more passengers or the maximum capacity has been reached. Figure 2 illustrates the door component. 
 
-![DoorComponent](https://user-images.githubusercontent.com/86586703/123599889-8c024480-d80f-11eb-8530-339fbdfef66a.JPG)
+![DoorComponent](https://user-images.githubusercontent.com/86586703/123754352-393e9080-d8d4-11eb-81a8-6cc27e0de67a.JPG)
 
 **4.2.3  Cabin**
 
-It is the carriage for a maximum of 10 passengers. When the passengers enter the cabin they wait until their desired floor has arrived. When the passengers enter the cabin, their desired floor is selected and a list of trips is created after removing the duplicates. The passengers wait until the elevator arrives at their desired destination. Figure 4 illustrates Cabin component. 
+It is the carriage for a maximum of 10 passengers. When the passengers enter the cabin they wait until their desired floor has arrived. When the passengers enter the cabin, their desired floor is selected and a list of trips is created after removing the duplicates. The passengers wait until the elevator arrives at their desired destination. Figure 3 illustrates Cabin component. 
 
-![CabinComponent](https://user-images.githubusercontent.com/86586703/123599581-30d05200-d80f-11eb-9e73-18a2c4e20aeb.JPG)
+![CabinComponent](https://user-images.githubusercontent.com/86586703/123754403-478cac80-d8d4-11eb-9679-a02a00c1f405.JPG)
 
 **4.2.4  Motor**
 
-It takes a list of trips as input from the cabin (the internal button panel selection for the desired floor) or from the floors (outer panel) and moves the motor right to go upwards or left to go downwards. Motor has brakes, which are applied when the desired floor is reached. This component is responsible to change the ‘*current floor*’. Figure 5 illustrates Motor component. 
+It takes a list of trips as input from the cabin (the internal button panel selection for the desired floor) or from the floors (outer panel) and moves the motor right to go upwards or left to go downwards. Motor has brakes, which are applied when the desired floor is reached. This component is responsible to change the ‘*current floor*’. Figure 4 illustrates Motor component. 
 
-![MotorComponent](https://user-images.githubusercontent.com/86586703/123599945-99b7ca00-d80f-11eb-8693-02078083346c.JPG)
+![MotorComponent](https://user-images.githubusercontent.com/86586703/123754462-5a06e600-d8d4-11eb-81ef-c36e5c2a5c15.JPG)
 
 **4.3 Model composition**
 
