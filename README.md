@@ -72,3 +72,21 @@ We create another scenario of the Elevator Model where two elevators are used to
 ![Model_Reuse2](https://user-images.githubusercontent.com/86586703/123757663-a56ec380-d8d7-11eb-9378-b941fd5f72fe.JPG)
 
 The reuse of the elevator component renders the same results however improves the overall efficiency of the system as the passengers randomly select either elevator and reach their final destination in lesser time. When we apply our composability verification process the goal state is reached and the safety property is satisfied. Thus, we can say that a verified composed model satisfies its requirement specification and that successful composability verification is an important characteristic of model reuse. 
+
+
+**CPN Tools Installation Process**
+1. To install CPN Tools for Windows, download and run the file cpntools_setup.exe
+2. After successfully installation, ypu need to open the CPN file. Double click on the file, it will open in CPN tools.
+3. Once the file will be open, you need to drag the simulation tools from the index to the workspace.
+
+![SimulationsTool](https://user-images.githubusercontent.com/86586703/123760713-8de50a00-d8da-11eb-82d9-8b2b08480123.JPG)
+
+4. We can also define the specific number of steps by applying play tool cell.
+
+![play](https://user-images.githubusercontent.com/86586703/123761268-15cb1400-d8db-11eb-889d-5921f9162568.JPG)
+
+5. It is also possible to execute the simulation step by step or  apply one of the simulation tools from the transition marking menu to an enabled transition..
+
+![trans](https://user-images.githubusercontent.com/86586703/123761418-3dba7780-d8db-11eb-86de-608ff81e006b.JPG)
+
+
