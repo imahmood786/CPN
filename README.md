@@ -92,14 +92,14 @@ The reuse of the elevator component renders the same results however improves th
 
 **Single Elevator System**
 
-we provided the details of the case study of an elevator model we assume an elevator which servers 6 floors. For the sake of simplicity and reduced space, we initialize each florr with 3-4 passengers (though the actual model is capable of taking a large number of incoming passengers).We made two elevators system (Single and Double elevator systems). We have uploaded code files on github.
+we provided the details of the case study of an elevator model we assume an elevator which servers 6 floors. For the sake of simplicity and reduced space, we initialize each florr with 3-4 passengers (though the actual model is capable of taking a large number of incoming passengers).We built two elevators system (Single and Double elevator systems). We have uploaded code files on github.
 
 1. Users need to download the file **ElevatorTimeModelV-4.cpn** from github. 
 2. After Successfully download the file. User needs to open the file in CPN tools.
 3. Once the file is opened in CPN tools. You can easily run the model. All you need is to drag the simulator from the index to the workspace.
 4. Using simulator you can run the model step by step and you can also get the same results as it is mentioned in the paper.
 5. For verification, you need to open the page **Safety** in which all the verification code is available.
-6. We developed and performed the query functions, shown in Figure to prove that goal state is reachable and constraint will never be reached. The goal is to ensure that all the passengers arrive at their desired floors, so we check that there exists a marking that satisfies this criterion. The constraint is to ensure that the door will never be opened when the elevator is moving. We prove that if there are tokens in ‘Entered’ place of any floor, meaning the door is opened, then the ‘Rotating Left’ or ‘Rotating Right’ place is empty and vice versa. The satisfaction of goals and constraints assert that all the components are consistent and their behavioral composability is verified as per given requirement specification 
+6. We developed and performed the query functions, shown in Figure 8 to prove that goal state is reachable and constraint will never be reached. The goal is to ensure that all the passengers arrive at their desired floors, so we check that there exists a marking that satisfies this criterion. The constraint is to ensure that the door will never be opened when the elevator is moving. We prove that if there are tokens in ‘Entered’ place of any floor, meaning the door is opened, then the ‘Rotating Left’ or ‘Rotating Right’ place is empty and vice versa. The satisfaction of goals and constraints assert that all the components are consistent and their behavioral composability is verified as per given requirement specification 
 7. we perform the state- space analysis. After generating the state-space of the composed model, we visualize it in **Gephi tool** as shown in **Figure 7.** In the state space, Node 1 is the initial node and Node 223 is the goal state. The shortest path to reach the goal state is shown in red color. 
 8. Here is the link https://gephi.org/users/download/, where you can download the **Gephi tool**.
 
