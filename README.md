@@ -105,7 +105,8 @@ we provided the details of the case study of an elevator model we assume an elev
 
 **Double Elevator System**
 
-Double Elevator system in which we built two elevators. Passengers entered in the cabin and they need to press the desire floor button 
+Double Elevator system in which we built two elevators. 
+
 1. Users need to download the file **ElevatorTimeModelV-9.cpn** from github. 
 2. After Successfully download the file. User needs to open the file in CPN tools.
 3. Repeat the **steps 3, 4, 5, 6, 7, 8** of single elevator system.
