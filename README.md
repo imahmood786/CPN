@@ -90,3 +90,25 @@ The reuse of the elevator component renders the same results however improves th
 ![trans](https://user-images.githubusercontent.com/86586703/123761418-3dba7780-d8db-11eb-86de-608ff81e006b.JPG)
 
 
+**Single Elevator System**
+
+we provided the details of the case study of an elevator model we assume an elevator which servers 6 floors. For the sake of simplicity and reduced space, we initialize each florr with 3-4 passengers (though the actual model is capable of taking a large number of incoming passengers).We made two elevators system (Single and Double elevator systems). We have uploaded code files on github.
+
+1. Users need to download the file **ElevatorTimeModelV-4.cpn** from github. 
+2. After Successfully download the file. User needs to open the file in CPN tools.
+3. Once the file is opened in CPN tools. You can easily run the model. All you need is to drag the simulator from the index to the workspace.
+4. Using simulator you can run the model step by step and you can also get the same results as it is mentioned in the paper.
+5. For verification, you need to open the page **Safety** in which all the verification code is available.
+6. We developed and performed the query functions, shown in Figure to prove that goal state is reachable and constraint will never be reached. The goal is to ensure that all the passengers arrive at their desired floors, so we check that there exists a marking that satisfies this criterion. The constraint is to ensure that the door will never be opened when the elevator is moving. We prove that if there are tokens in ‘Entered’ place of any floor, meaning the door is opened, then the ‘Rotating Left’ or ‘Rotating Right’ place is empty and vice versa. The satisfaction of goals and constraints assert that all the components are consistent and their behavioral composability is verified as per given requirement specification 
+7. we perform the state- space analysis. After generating the state-space of the composed model, we visualize it in **Gephi tool** as shown in **Figure 7.** In the state space, Node 1 is the initial node and Node 223 is the goal state. The shortest path to reach the goal state is shown in red color. 
+8. Here is the link https://gephi.org/users/download/, where you can download the **Gephi tool**.
+
+**Double Elevator System**
+Double Elevator system in which we built two elevators. Passengers entered in the cabin and they need to press the desire floor button 
+1. Users need to download the file **ElevatorTimeModelV-9.cpn** from github. 
+2. After Successfully download the file. User needs to open the file in CPN tools.
+3. Repeat the **steps 3, 4, 5, 6, 7, 8** of single elevator system.
+
+**Model Execution**
+Figure 9 & Figure 10 illustrate the initial state and the final state of the model's execution. The tokens in the initial state represent passengers as a tuple: {Passenger
+ID, Current Floor, and Desired Floor}. Note that in the final state, all the passengers reach their desired floor.
