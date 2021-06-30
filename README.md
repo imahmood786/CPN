@@ -104,11 +104,13 @@ we provided the details of the case study of an elevator model we assume an elev
 8. Here is the link https://gephi.org/users/download/, where you can download the **Gephi tool**.
 
 **Double Elevator System**
+
 Double Elevator system in which we built two elevators. Passengers entered in the cabin and they need to press the desire floor button 
 1. Users need to download the file **ElevatorTimeModelV-9.cpn** from github. 
 2. After Successfully download the file. User needs to open the file in CPN tools.
 3. Repeat the **steps 3, 4, 5, 6, 7, 8** of single elevator system.
 
 **Model Execution**
+
 Figure 9 & Figure 10 illustrate the initial state and the final state of the model's execution. The tokens in the initial state represent passengers as a tuple: {Passenger
 ID, Current Floor, and Desired Floor}. Note that in the final state, all the passengers reach their desired floor.
